@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		28914EB5171B9CF5002613F2 /* CreditsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28914EB4171B9CF5002613F2 /* CreditsViewController.m */; };
 		28A15D8F1716166300A5A812 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28A15D8E1716166300A5A812 /* UIKit.framework */; };
 		28A15D911716166300A5A812 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28A15D901716166300A5A812 /* Foundation.framework */; };
 		28A15D931716166300A5A812 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28A15D921716166300A5A812 /* CoreGraphics.framework */; };
@@ -24,6 +25,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		28914EB3171B9CF5002613F2 /* CreditsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreditsViewController.h; sourceTree = "<group>"; };
+		28914EB4171B9CF5002613F2 /* CreditsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreditsViewController.m; sourceTree = "<group>"; };
 		28A15D8B1716166300A5A812 /* BabyGoesToBeddy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BabyGoesToBeddy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		28A15D8E1716166300A5A812 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		28A15D901716166300A5A812 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -103,6 +106,8 @@
 				28A15DB71716175C00A5A812 /* StartPageViewController.h */,
 				28A15DB81716175C00A5A812 /* StartPageViewController.m */,
 				28A15DAF1716166400A5A812 /* MainStoryboard.storyboard */,
+				28914EB3171B9CF5002613F2 /* CreditsViewController.h */,
+				28914EB4171B9CF5002613F2 /* CreditsViewController.m */,
 				28A15D951716166400A5A812 /* Supporting Files */,
 			);
 			path = BabyGoesToBeddy;
@@ -194,6 +199,7 @@
 				28A15DAB1716166400A5A812 /* DataViewController.m in Sources */,
 				28A15DAE1716166400A5A812 /* ModelController.m in Sources */,
 				28A15DB91716175C00A5A812 /* StartPageViewController.m in Sources */,
+				28914EB5171B9CF5002613F2 /* CreditsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -318,6 +324,7 @@
 				28A15DB61716166400A5A812 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

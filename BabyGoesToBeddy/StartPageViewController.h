@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface StartPageViewController : UIViewController
-- (IBAction)startButton:(UIButton *)sender;
+//- (IBAction)startButton:(UIButton *)sender;
 - (IBAction)creditsButton:(UIButton *)sender;
 
 @end
