@@ -108,7 +108,7 @@
 			isa = PBXGroup;
 			children = (
 				28F31892171EDEF00084EDC6 /* AVFoundation.framework */,
-				28A15D941716166300A5A812 /* BabyGoesToBeddy */,
+				28A15D941716166300A5A812 /* JakeandJimmysFunDay */,
 				28A15D8D1716166300A5A812 /* Frameworks */,
 				28A15D8C1716166300A5A812 /* Products */,
 			);
@@ -132,7 +132,7 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		28A15D941716166300A5A812 /* BabyGoesToBeddy */ = {
+		28A15D941716166300A5A812 /* JakeandJimmysFunDay */ = {
 			isa = PBXGroup;
 			children = (
 				28A15D9D1716166400A5A812 /* AppDelegate.h */,
@@ -152,6 +152,7 @@
 				28F3186C171EBFDA0084EDC6 /* Assignment 1 Photos */,
 				28A15D951716166400A5A812 /* Supporting Files */,
 			);
+			name = JakeandJimmysFunDay;
 			path = BabyGoesToBeddy;
 			sourceTree = "<group>";
 		};
@@ -231,7 +232,7 @@
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = "Baller Status Inc.";
 			};
-			buildConfigurationList = 28A15D861716166300A5A812 /* Build configuration list for PBXProject "BabyGoesToBeddy" */;
+			buildConfigurationList = 28A15D861716166300A5A812 /* Build configuration list for PBXProject "JakeandJimmysFunDay" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -401,7 +402,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		28A15D861716166300A5A812 /* Build configuration list for PBXProject "BabyGoesToBeddy" */ = {
+		28A15D861716166300A5A812 /* Build configuration list for PBXProject "JakeandJimmysFunDay" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				28A15DB21716166400A5A812 /* Debug */,
