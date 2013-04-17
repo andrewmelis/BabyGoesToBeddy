@@ -13,6 +13,13 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+//    
+//    NSNumber tmp = [[NSUserDefaults standardUserDefaults] integerForKey:@"bookmark"];
+//    if( tmp == NULL || tmp==0) {
+//        int bookmark = 0;
+//        [[NSUserDefaults standardUserDefaults] setInteger:bookmark forKey:@"bookmark"];
+//    }
+    
     return YES;
 }
 

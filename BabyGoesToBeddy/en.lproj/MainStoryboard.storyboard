@@ -231,9 +231,6 @@
     <classes>
         <class className="CreditsViewController" superclassName="UITableViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/CreditsViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="creditCell" candidateClass="UITableViewCell"/>
-            </relationships>
         </class>
         <class className="DataViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/DataViewController.h"/>
