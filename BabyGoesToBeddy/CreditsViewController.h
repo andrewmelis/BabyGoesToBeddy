@@ -9,12 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface CreditsViewController : UITableViewController
-@property (strong, nonatomic) NSArray *creditsArray;
-
-@end
-
-@interface CreditsCell : NSObject
-@property (strong, nonatomic) NSString *name;
-@property (strong, nonatomic) NSString *role;
+@property (weak, nonatomic) IBOutlet UITableViewCell *creditCell;
 
 @end

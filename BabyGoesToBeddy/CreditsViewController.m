@@ -9,6 +9,8 @@
 #import "CreditsViewController.h"
 
 @interface CreditsViewController ()
+@property (strong, nonatomic) NSArray *nameList;
+@property (strong, nonatomic) NSArray *roleList;
 
 @end
 
@@ -27,27 +29,7 @@
 {
     [super viewDidLoad];
 
-    CreditsCell *first;
-    first.name = @"Andrew Melis";
-    first.role = @"Concept & Design";
-
-    CreditsCell *second;
-    second.name = @"Andrew Melis";
-    second.role = @"Lead Developer";
-    
-    CreditsCell *third;
-    third.name = @"Claudia Hernandez";
-    third.role = @"Education Consultant";
-    
-    CreditsCell *fourth;
-    fourth.name = @"T. Andrew Binkowski";
-    fourth.role = @"Lead Professor";
-
-    CreditsCell *fifth;
-    fifth.name = @"Jonathan";
-    fifth.role = @"Lead TA";
-    
-    self.creditsArray = [NSArray arrayWithObjects: second,first, third, fourth, fifth, nil];
+    [self setArrays];
 }
 
 - (void)didReceiveMemoryWarning
@@ -74,12 +56,17 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *CellIdentifier = @"RoleCell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+    static NSString *CellIdentifier = @"Cell";
     
-    // Configure the cell...
-    cell.textLabel.text = [self.creditsArray objectAtIndex:indexPath.row];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     
+    if (cell == nil) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:CellIdentifier];
+    
+    }
+        // Configure the cell...
+    cell.textLabel.text = [self.nameList objectAtIndex:indexPath.row];
+    cell.detailTextLabel.text = [self.roleList objectAtIndex:indexPath.row];
     
     return cell;
 }
@@ -134,6 +121,12 @@
      // Pass the selected object to the new view controller.
      [self.navigationController pushViewController:detailViewController animated:YES];
      */
+}
+
+- (void) setArrays {
+    self.nameList = [NSArray arrayWithObjects:@"Andrew Melis",@"Claudia Hernandez", @"Jake & Jimmy Waldeck", @"T. Andrew Binkowski", @"Jonathan", nil];
+    
+    self.roleList = [NSArray arrayWithObjects:@"Lead Development", @"Educational Consultant", @"Talent", @"Professor", @"TA", nil];
 }
 
 @end
