@@ -44,7 +44,7 @@
 - (void) viewDidAppear:(BOOL)animated {
 
     if([_pageLabel.text isEqual: @"Bye bye!"]) {        //if it's the last page -- better way to mark this?
-        [UIView animateWithDuration:5 animations:^{
+        [UIView animateWithDuration:12 animations:^{
             pagePicture.alpha = .001;
         }];
     }
