@@ -31,6 +31,15 @@
 		28F3187C171EBFDA0084EDC6 /* 7 jake cheetos.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 28F31873171EBFDA0084EDC6 /* 7 jake cheetos.jpg */; };
 		28F3187D171EBFDA0084EDC6 /* 8 jimmy cake.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 28F31874171EBFDA0084EDC6 /* 8 jimmy cake.jpg */; };
 		28F3187E171EBFDA0084EDC6 /* 9 family lake.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 28F31875171EBFDA0084EDC6 /* 9 family lake.jpg */; };
+		28F31889171ED86D0084EDC6 /* pg1.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 28F31880171ED86D0084EDC6 /* pg1.m4a */; };
+		28F3188A171ED86D0084EDC6 /* pg2.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 28F31881171ED86D0084EDC6 /* pg2.m4a */; };
+		28F3188B171ED86D0084EDC6 /* pg3.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 28F31882171ED86D0084EDC6 /* pg3.m4a */; };
+		28F3188C171ED86D0084EDC6 /* pg4.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 28F31883171ED86D0084EDC6 /* pg4.m4a */; };
+		28F3188D171ED86D0084EDC6 /* pg5.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 28F31884171ED86D0084EDC6 /* pg5.m4a */; };
+		28F3188E171ED86D0084EDC6 /* pg6.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 28F31885171ED86D0084EDC6 /* pg6.m4a */; };
+		28F3188F171ED86D0084EDC6 /* pg7.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 28F31886171ED86D0084EDC6 /* pg7.m4a */; };
+		28F31890171ED86D0084EDC6 /* pg8.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 28F31887171ED86D0084EDC6 /* pg8.m4a */; };
+		28F31891171ED86D0084EDC6 /* pg9.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 28F31888171ED86D0084EDC6 /* pg9.m4a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -67,6 +76,15 @@
 		28F31873171EBFDA0084EDC6 /* 7 jake cheetos.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "7 jake cheetos.jpg"; sourceTree = "<group>"; };
 		28F31874171EBFDA0084EDC6 /* 8 jimmy cake.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "8 jimmy cake.jpg"; sourceTree = "<group>"; };
 		28F31875171EBFDA0084EDC6 /* 9 family lake.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "9 family lake.jpg"; sourceTree = "<group>"; };
+		28F31880171ED86D0084EDC6 /* pg1.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = pg1.m4a; sourceTree = "<group>"; };
+		28F31881171ED86D0084EDC6 /* pg2.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = pg2.m4a; sourceTree = "<group>"; };
+		28F31882171ED86D0084EDC6 /* pg3.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = pg3.m4a; sourceTree = "<group>"; };
+		28F31883171ED86D0084EDC6 /* pg4.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = pg4.m4a; sourceTree = "<group>"; };
+		28F31884171ED86D0084EDC6 /* pg5.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = pg5.m4a; sourceTree = "<group>"; };
+		28F31885171ED86D0084EDC6 /* pg6.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = pg6.m4a; sourceTree = "<group>"; };
+		28F31886171ED86D0084EDC6 /* pg7.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = pg7.m4a; sourceTree = "<group>"; };
+		28F31887171ED86D0084EDC6 /* pg8.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = pg8.m4a; sourceTree = "<group>"; };
+		28F31888171ED86D0084EDC6 /* pg9.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = pg9.m4a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +144,7 @@
 				28A15DAC1716166400A5A812 /* ModelController.h */,
 				28A15DAD1716166400A5A812 /* ModelController.m */,
 				28A15DAF1716166400A5A812 /* MainStoryboard.storyboard */,
+				28F3187F171ED86D0084EDC6 /* Assignment 1 audio */,
 				28F3186C171EBFDA0084EDC6 /* Assignment 1 Photos */,
 				28A15D951716166400A5A812 /* Supporting Files */,
 			);
@@ -161,6 +180,22 @@
 			);
 			name = "Assignment 1 Photos";
 			path = "../Assignment 1 Photos";
+			sourceTree = "<group>";
+		};
+		28F3187F171ED86D0084EDC6 /* Assignment 1 audio */ = {
+			isa = PBXGroup;
+			children = (
+				28F31880171ED86D0084EDC6 /* pg1.m4a */,
+				28F31881171ED86D0084EDC6 /* pg2.m4a */,
+				28F31882171ED86D0084EDC6 /* pg3.m4a */,
+				28F31883171ED86D0084EDC6 /* pg4.m4a */,
+				28F31884171ED86D0084EDC6 /* pg5.m4a */,
+				28F31885171ED86D0084EDC6 /* pg6.m4a */,
+				28F31886171ED86D0084EDC6 /* pg7.m4a */,
+				28F31887171ED86D0084EDC6 /* pg8.m4a */,
+				28F31888171ED86D0084EDC6 /* pg9.m4a */,
+			);
+			path = "Assignment 1 audio";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -228,6 +263,15 @@
 				28F3187C171EBFDA0084EDC6 /* 7 jake cheetos.jpg in Resources */,
 				28F3187D171EBFDA0084EDC6 /* 8 jimmy cake.jpg in Resources */,
 				28F3187E171EBFDA0084EDC6 /* 9 family lake.jpg in Resources */,
+				28F31889171ED86D0084EDC6 /* pg1.m4a in Resources */,
+				28F3188A171ED86D0084EDC6 /* pg2.m4a in Resources */,
+				28F3188B171ED86D0084EDC6 /* pg3.m4a in Resources */,
+				28F3188C171ED86D0084EDC6 /* pg4.m4a in Resources */,
+				28F3188D171ED86D0084EDC6 /* pg5.m4a in Resources */,
+				28F3188E171ED86D0084EDC6 /* pg6.m4a in Resources */,
+				28F3188F171ED86D0084EDC6 /* pg7.m4a in Resources */,
+				28F31890171ED86D0084EDC6 /* pg8.m4a in Resources */,
+				28F31891171ED86D0084EDC6 /* pg9.m4a in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
