@@ -30,6 +30,7 @@
 {
     [super viewWillAppear:animated];
     self.pageLabel.text = [self.dataObject description];
+
 }
 
 @end

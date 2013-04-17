@@ -21,6 +21,7 @@
 
 @interface ModelController()
 @property (readonly, strong, nonatomic) NSArray *pageData;
+//@property (readonly, strong, nonatomic) NSMutableArray *pageData;
 @end
 
 @implementation ModelController
@@ -30,8 +31,21 @@
     self = [super init];
     if (self) {
         // Create the data model.
-        NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
-        _pageData = [[dateFormatter monthSymbols] copy];
+//        NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+//        _pageData = [[dateFormatter monthSymbols] copy];
+//        
+        //my try
+        _pageData = [NSArray arrayWithObjects:
+                     @"This is Jack and Baby Jimmy,",               //pg 1
+                     @"and here is Kathy and Jake!",                //pg 2
+                     @"The family went out to the park",            //pg 3
+                     @"but it's getting too hot and sunny!",        //pg 4
+                     @"Time to run through the sprinkler!",         //pg 5
+                     @"Oh no! Mommy got all wet!",                  //pg 6
+                     @"Boy, that was fun",                          //pg 7
+                     @"But we need some snacks!",                   //pg 8
+                     @"Bye bye!",                                   //pg 9
+                     nil];
     }
     return self;
 }
@@ -46,6 +60,7 @@
     // Create a new view controller and pass suitable data.
     DataViewController *dataViewController = [storyboard instantiateViewControllerWithIdentifier:@"DataViewController"];
     dataViewController.dataObject = self.pageData[index];
+//    dataViewController.pageLabel = self.pageData[index];
     return dataViewController;
 }
 
