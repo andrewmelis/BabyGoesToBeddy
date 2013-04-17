@@ -40,6 +40,7 @@
 		28F3188F171ED86D0084EDC6 /* pg7.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 28F31886171ED86D0084EDC6 /* pg7.m4a */; };
 		28F31890171ED86D0084EDC6 /* pg8.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 28F31887171ED86D0084EDC6 /* pg8.m4a */; };
 		28F31891171ED86D0084EDC6 /* pg9.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 28F31888171ED86D0084EDC6 /* pg9.m4a */; };
+		28F31893171EDEF00084EDC6 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28F31892171EDEF00084EDC6 /* AVFoundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -85,6 +86,7 @@
 		28F31886171ED86D0084EDC6 /* pg7.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = pg7.m4a; sourceTree = "<group>"; };
 		28F31887171ED86D0084EDC6 /* pg8.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = pg8.m4a; sourceTree = "<group>"; };
 		28F31888171ED86D0084EDC6 /* pg9.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = pg9.m4a; sourceTree = "<group>"; };
+		28F31892171EDEF00084EDC6 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +94,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				28F31893171EDEF00084EDC6 /* AVFoundation.framework in Frameworks */,
 				28A15D8F1716166300A5A812 /* UIKit.framework in Frameworks */,
 				28A15D911716166300A5A812 /* Foundation.framework in Frameworks */,
 				28A15D931716166300A5A812 /* CoreGraphics.framework in Frameworks */,
@@ -104,6 +107,7 @@
 		28A15D821716166300A5A812 = {
 			isa = PBXGroup;
 			children = (
+				28F31892171EDEF00084EDC6 /* AVFoundation.framework */,
 				28A15D941716166300A5A812 /* BabyGoesToBeddy */,
 				28A15D8D1716166300A5A812 /* Frameworks */,
 				28A15D8C1716166300A5A812 /* Products */,

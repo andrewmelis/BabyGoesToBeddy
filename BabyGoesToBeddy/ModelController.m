@@ -22,6 +22,7 @@
 @interface ModelController()
 @property (readonly, strong, nonatomic) NSArray *pageLabels;
 @property (readonly, strong, nonatomic) NSArray *pageImages;
+@property (readonly, strong, nonatomic) NSArray *pageSounds;
 
 @end
 
@@ -59,7 +60,19 @@
                      [UIImage imageNamed:@"8 jimmy cake.jpg"],
                      [UIImage imageNamed:@"9 family lake.jpg"],
                      nil];
-    
+        
+        _pageSounds =[[NSArray alloc] initWithObjects:
+                      [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"pg1" ofType:@"m4a"]],
+                      [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"pg2" ofType:@"m4a"]],
+                      [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"pg3" ofType:@"m4a"]],
+                      [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"pg4" ofType:@"m4a"]],
+                      [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"pg5" ofType:@"m4a"]],
+                      [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"pg6" ofType:@"m4a"]],
+                      [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"pg7" ofType:@"m4a"]],
+                      [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"pg8" ofType:@"m4a"]],
+                      [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"pg9" ofType:@"m4a"]],
+                      
+                      nil];
     }
     return self;
 }
@@ -77,6 +90,7 @@
     DataViewController *dataViewController = [storyboard instantiateViewControllerWithIdentifier:@"DataViewController"];
     dataViewController.dataLabel = self.pageLabels[index];
     dataViewController.dataImage = self.pageImages[index];
+    dataViewController.dataSound = self.pageSounds[index];
     
     return dataViewController;
 }

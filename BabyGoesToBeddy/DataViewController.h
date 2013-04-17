@@ -7,6 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <AVFoundation/AVFoundation.h>
+#import <AudioToolbox/AudioToolbox.h>
 
 @interface DataViewController : UIViewController
 
@@ -15,5 +17,12 @@
 
 @property (strong, nonatomic) id dataLabel;
 @property (strong, nonatomic) id dataImage;
+@property (strong, nonatomic) id dataSound;
 
+
+//audio hints from http://gabriel-tips.blogspot.com/2012/07/how-to-play-audio-files-using.html
+// Declare an object for the audio player.
+@property (nonatomic, retain) AVAudioPlayer *player;
+
+- (IBAction)soundButton:(UIButton *)sender;
 @end

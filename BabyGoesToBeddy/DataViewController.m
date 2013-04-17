@@ -7,6 +7,8 @@
 //
 
 #import "DataViewController.h"
+#import <AVFoundation/AVFoundation.h>
+#import <AudioToolbox/AudioToolbox.h>
 
 
 @interface DataViewController ()
@@ -14,6 +16,8 @@
 @end
 
 @implementation DataViewController
+
+@synthesize player;
 
 - (void)viewDidLoad
 {
@@ -36,4 +40,16 @@
     
 }
 
+- (IBAction)soundButton:(UIButton *)sender {
+    
+    NSURL *pathAsURL = _dataSound;
+    
+    //this part from http://gabriel-tips.blogspot.com/2012/07/how-to-play-audio-files-using.html
+    //and http://stackoverflow.com/questions/13495298/how-do-i-make-a-button-play-a-sound-in-xcode-4-5-2
+    
+    // Init the audio player.
+    NSError *error;
+    player = [[AVAudioPlayer alloc] initWithContentsOfURL:pathAsURL error:&error];
+    [player play];
+}
 @end
