@@ -9,7 +9,7 @@
             <objects>
                 <viewController storyboardIdentifier="Start" id="73L-r7-jnf" customClass="StartPageViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" restorationIdentifier="Start" id="C0E-6x-4UK">
-                        <rect key="frame" x="0.0" y="64" width="768" height="960"/>
+                        <rect key="frame" x="0.0" y="20" width="768" height="1004"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lkb-io-jOS">
@@ -47,7 +47,7 @@
                                     <segue destination="T0C-AU-jkZ" kind="push" id="LwV-0d-Wid"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Andrew's Awesome Book" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hDw-zp-Djd">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Jake and Jimmy's Fun Day" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hDw-zp-Djd">
                                 <constraints>
                                     <constraint firstAttribute="height" constant="55" id="ymo-tA-Y11"/>
                                 </constraints>
@@ -55,20 +55,27 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="by Andrew Melis" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Irh-Vh-ZQE">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="0.0" blue="0.50196081399917603" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.0" green="0.50196081399917603" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="Irh-Vh-ZQE" firstAttribute="top" secondItem="C0E-6x-4UK" secondAttribute="top" constant="491" id="383-KS-njq"/>
                             <constraint firstItem="hDw-zp-Djd" firstAttribute="top" secondItem="C0E-6x-4UK" secondAttribute="top" constant="227" id="K0N-SJ-lH7"/>
                             <constraint firstAttribute="bottom" secondItem="0Az-ql-yZM" secondAttribute="bottom" constant="112" id="KFk-ve-aSM"/>
-                            <constraint firstItem="Lkb-io-jOS" firstAttribute="centerX" secondItem="hDw-zp-Djd" secondAttribute="centerX" type="default" id="Kjo-Wo-bCw"/>
                             <constraint firstAttribute="trailing" secondItem="hDw-zp-Djd" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="QGk-aX-YnU"/>
                             <constraint firstItem="hDw-zp-Djd" firstAttribute="leading" secondItem="C0E-6x-4UK" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="SUG-xU-4hB"/>
                             <constraint firstItem="0Az-ql-yZM" firstAttribute="centerX" secondItem="Lkb-io-jOS" secondAttribute="centerX" type="default" id="TgE-lW-VC5"/>
+                            <constraint firstItem="Irh-Vh-ZQE" firstAttribute="centerX" secondItem="Lkb-io-jOS" secondAttribute="centerX" type="default" id="nTj-Qm-1Hn"/>
                             <constraint firstAttribute="bottom" secondItem="Lkb-io-jOS" secondAttribute="bottom" constant="196" id="qcB-oS-O8x"/>
+                            <constraint firstItem="Irh-Vh-ZQE" firstAttribute="centerX" secondItem="hDw-zp-Djd" secondAttribute="centerX" type="default" id="r13-va-dYF"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="OwS-c3-Zem"/>
-                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="blackOpaque" prompted="NO"/>
+                    <nil key="simulatedTopBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VC7-qu-UDs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -202,6 +209,31 @@
             <point key="canvasLocation" x="2971" y="-2490"/>
         </scene>
     </scenes>
+    <classes>
+        <class className="CreditsViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/CreditsViewController.h"/>
+        </class>
+        <class className="DataViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/DataViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="soundButton:" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="pageLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="pagePicture" candidateClass="UIImageView"/>
+            </relationships>
+        </class>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="RootViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/RootViewController.h"/>
+        </class>
+        <class className="StartPageViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/StartPageViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="creditsButton:" candidateClass="UIButton"/>
+            </relationships>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar" statusBarStyle="blackTranslucent"/>
         <simulatedOrientationMetrics key="orientation"/>

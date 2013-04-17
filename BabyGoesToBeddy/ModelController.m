@@ -32,11 +32,8 @@
 {
     self = [super init];
     if (self) {
-        // Create the data model.
-//        NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
-//        _pageData = [[dateFormatter monthSymbols] copy];
-//        
-        //my try
+        // Create the data models
+
         _pageLabels = [NSArray arrayWithObjects:
                      @"This is Jack and Baby Jimmy,",               //pg 1
                      @"and here are Kathy and Jake.",               //pg 2
