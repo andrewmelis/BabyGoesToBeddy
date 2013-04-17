@@ -10,9 +10,10 @@
 
 @interface DataViewController : UIViewController
 
-@property (weak, nonatomic) IBOutlet UILabel *pageLabel;
-@property (weak, nonatomic) IBOutlet UIImageView *pagePicture;
+@property (strong, nonatomic) IBOutlet UILabel *pageLabel;
+@property (strong, nonatomic) IBOutlet UIImageView *pagePicture;
 
 @property (strong, nonatomic) id dataObject;
+@property (strong, nonatomic) id dataObject2;
 
 @end

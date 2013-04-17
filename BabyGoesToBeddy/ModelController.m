@@ -21,7 +21,8 @@
 
 @interface ModelController()
 @property (readonly, strong, nonatomic) NSArray *pageData;
-//@property (readonly, strong, nonatomic) NSMutableArray *pageData;
+@property (readonly, strong, nonatomic) NSArray *pageImages;
+
 @end
 
 @implementation ModelController
@@ -37,15 +38,28 @@
         //my try
         _pageData = [NSArray arrayWithObjects:
                      @"This is Jack and Baby Jimmy,",               //pg 1
-                     @"and here is Kathy and Jake!",                //pg 2
+                     @"and here are Kathy and Jake.",               //pg 2
                      @"The family went out to the park",            //pg 3
                      @"but it's getting too hot and sunny!",        //pg 4
                      @"Time to run through the sprinkler!",         //pg 5
                      @"Oh no! Mommy got all wet!",                  //pg 6
                      @"Boy, that was fun",                          //pg 7
-                     @"But we need some snacks!",                   //pg 8
+                     @"But we sure need some snacks!",              //pg 8
                      @"Bye bye!",                                   //pg 9
                      nil];
+        
+        _pageImages =[[NSArray alloc] initWithObjects:
+                     [UIImage imageNamed:@"2 jack + jimmy.jpg"],
+                     [UIImage imageNamed:@"1 kathy + jake stroller.jpg"],
+                     [UIImage imageNamed:@"3 jimmy ball.jpg"],
+                     [UIImage imageNamed:@"4 jake sunglasses.jpg"],
+                     [UIImage imageNamed:@"5 kids sprinkler.jpg"],
+                     [UIImage imageNamed:@"6 both + kathy pool.jpg"],
+                     [UIImage imageNamed:@"7 jake cheetos.jpg"],
+                     [UIImage imageNamed:@"8 jimmy cake.jpg"],
+                     [UIImage imageNamed:@"9 family lake.jpg"],
+                     nil];
+    
     }
     return self;
 }
@@ -53,6 +67,8 @@
 - (DataViewController *)viewControllerAtIndex:(NSUInteger)index storyboard:(UIStoryboard *)storyboard
 {   
     // Return the data view controller for the given index.
+    
+    //this if is for broken cases
     if (([self.pageData count] == 0) || (index >= [self.pageData count])) {
         return nil;
     }
@@ -60,7 +76,19 @@
     // Create a new view controller and pass suitable data.
     DataViewController *dataViewController = [storyboard instantiateViewControllerWithIdentifier:@"DataViewController"];
     dataViewController.dataObject = self.pageData[index];
-//    dataViewController.pageLabel = self.pageData[index];
+    dataViewController.dataObject2 = self.pageImages[index];
+    
+    //giant if statement for each picture
+//    
+//    if(index==0) {
+////        dataViewController.pagePicture = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"1 kathy + jake stroller.jpg"]];
+//        dataViewController.pagePicture.image = [UIImage imageNamed:@"1 kathy + jake stroller.jpg"];
+//        
+//    }
+    
+    
+    
+    
     return dataViewController;
 }
 
