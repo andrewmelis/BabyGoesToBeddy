@@ -22,6 +22,15 @@
 		28A15DAE1716166400A5A812 /* ModelController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28A15DAD1716166400A5A812 /* ModelController.m */; };
 		28A15DB11716166400A5A812 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28A15DAF1716166400A5A812 /* MainStoryboard.storyboard */; };
 		28A15DB91716175C00A5A812 /* StartPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28A15DB81716175C00A5A812 /* StartPageViewController.m */; };
+		28F31863171EA71B0084EDC6 /* both + kathy pool.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 28F3185A171EA71B0084EDC6 /* both + kathy pool.jpg */; };
+		28F31864171EA71B0084EDC6 /* family lake.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 28F3185B171EA71B0084EDC6 /* family lake.jpg */; };
+		28F31865171EA71B0084EDC6 /* jack + jimmy.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 28F3185C171EA71B0084EDC6 /* jack + jimmy.jpg */; };
+		28F31866171EA71B0084EDC6 /* jake cheetos.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 28F3185D171EA71B0084EDC6 /* jake cheetos.jpg */; };
+		28F31867171EA71B0084EDC6 /* jake sunglasses.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 28F3185E171EA71B0084EDC6 /* jake sunglasses.jpg */; };
+		28F31868171EA71B0084EDC6 /* jimmy ball.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 28F3185F171EA71B0084EDC6 /* jimmy ball.jpg */; };
+		28F31869171EA71B0084EDC6 /* jimmy cake.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 28F31860171EA71B0084EDC6 /* jimmy cake.jpg */; };
+		28F3186A171EA71B0084EDC6 /* kathy + jake stroller.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 28F31861171EA71B0084EDC6 /* kathy + jake stroller.jpg */; };
+		28F3186B171EA71B0084EDC6 /* kids sprinkler.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 28F31862171EA71B0084EDC6 /* kids sprinkler.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +58,15 @@
 		28A15DB01716166400A5A812 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		28A15DB71716175C00A5A812 /* StartPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StartPageViewController.h; sourceTree = "<group>"; };
 		28A15DB81716175C00A5A812 /* StartPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StartPageViewController.m; sourceTree = "<group>"; };
+		28F3185A171EA71B0084EDC6 /* both + kathy pool.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "both + kathy pool.jpg"; sourceTree = "<group>"; };
+		28F3185B171EA71B0084EDC6 /* family lake.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "family lake.jpg"; sourceTree = "<group>"; };
+		28F3185C171EA71B0084EDC6 /* jack + jimmy.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "jack + jimmy.jpg"; sourceTree = "<group>"; };
+		28F3185D171EA71B0084EDC6 /* jake cheetos.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "jake cheetos.jpg"; sourceTree = "<group>"; };
+		28F3185E171EA71B0084EDC6 /* jake sunglasses.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "jake sunglasses.jpg"; sourceTree = "<group>"; };
+		28F3185F171EA71B0084EDC6 /* jimmy ball.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "jimmy ball.jpg"; sourceTree = "<group>"; };
+		28F31860171EA71B0084EDC6 /* jimmy cake.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "jimmy cake.jpg"; sourceTree = "<group>"; };
+		28F31861171EA71B0084EDC6 /* kathy + jake stroller.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "kathy + jake stroller.jpg"; sourceTree = "<group>"; };
+		28F31862171EA71B0084EDC6 /* kids sprinkler.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "kids sprinkler.jpg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +126,7 @@
 				28914EB3171B9CF5002613F2 /* CreditsViewController.h */,
 				28914EB4171B9CF5002613F2 /* CreditsViewController.m */,
 				28A15DAF1716166400A5A812 /* MainStoryboard.storyboard */,
+				28F31859171EA71B0084EDC6 /* Assignment 1 Photos */,
 				28A15D951716166400A5A812 /* Supporting Files */,
 			);
 			path = BabyGoesToBeddy;
@@ -125,6 +144,22 @@
 				28A15DA41716166400A5A812 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		28F31859171EA71B0084EDC6 /* Assignment 1 Photos */ = {
+			isa = PBXGroup;
+			children = (
+				28F3185A171EA71B0084EDC6 /* both + kathy pool.jpg */,
+				28F3185B171EA71B0084EDC6 /* family lake.jpg */,
+				28F3185C171EA71B0084EDC6 /* jack + jimmy.jpg */,
+				28F3185D171EA71B0084EDC6 /* jake cheetos.jpg */,
+				28F3185E171EA71B0084EDC6 /* jake sunglasses.jpg */,
+				28F3185F171EA71B0084EDC6 /* jimmy ball.jpg */,
+				28F31860171EA71B0084EDC6 /* jimmy cake.jpg */,
+				28F31861171EA71B0084EDC6 /* kathy + jake stroller.jpg */,
+				28F31862171EA71B0084EDC6 /* kids sprinkler.jpg */,
+			);
+			path = "Assignment 1 Photos";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -183,6 +218,15 @@
 				28A15DA31716166400A5A812 /* Default@2x.png in Resources */,
 				28A15DA51716166400A5A812 /* Default-568h@2x.png in Resources */,
 				28A15DB11716166400A5A812 /* MainStoryboard.storyboard in Resources */,
+				28F31863171EA71B0084EDC6 /* both + kathy pool.jpg in Resources */,
+				28F31864171EA71B0084EDC6 /* family lake.jpg in Resources */,
+				28F31865171EA71B0084EDC6 /* jack + jimmy.jpg in Resources */,
+				28F31866171EA71B0084EDC6 /* jake cheetos.jpg in Resources */,
+				28F31867171EA71B0084EDC6 /* jake sunglasses.jpg in Resources */,
+				28F31868171EA71B0084EDC6 /* jimmy ball.jpg in Resources */,
+				28F31869171EA71B0084EDC6 /* jimmy cake.jpg in Resources */,
+				28F3186A171EA71B0084EDC6 /* kathy + jake stroller.jpg in Resources */,
+				28F3186B171EA71B0084EDC6 /* kids sprinkler.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -36,12 +36,6 @@
     // Dispose of any resources that can be recreated.
 }
 
-//- (IBAction)startButton:(UIButton *)sender {
-//    RootViewController *rvc = [[self storyboard] instantiateViewControllerWithIdentifier:@"Root"];
-//    [self presentViewController:rvc animated:YES completion:^{
-//        NSLog(@"fuck yeahhh");
-//    }];
-//}
 
 - (IBAction)creditsButton:(UIButton *)sender {
 }

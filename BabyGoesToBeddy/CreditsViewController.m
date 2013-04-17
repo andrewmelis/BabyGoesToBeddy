@@ -51,7 +51,7 @@
 {
 //#warning Incomplete method implementation.
     // Return the number of rows in the section.
-    return 5;
+    return 6;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -70,6 +70,14 @@
     
     return cell;
 }
+
+//set the property arrays for names and roles
+- (void) setArrays {
+    self.nameList = [NSArray arrayWithObjects: @"Jake & Jimmy Waldeck", @"Jack Waldeck and Kathy Campbell Waldeck", @"Andrew Melis",@"Claudia Hernandez", @"Andrew Binkowski", @"Jonathan Ozik", nil];
+    
+    self.roleList = [NSArray arrayWithObjects:@"Talent", @"Parents of Talent / My Awesome Cousins", @"Lead Development", @"Educational Consultant", @"Professor", @"TA", nil];
+}
+
 
 /*
 // Override to support conditional editing of the table view.
@@ -123,10 +131,6 @@
      */
 }
 
-- (void) setArrays {
-    self.nameList = [NSArray arrayWithObjects:@"Andrew Melis",@"Claudia Hernandez", @"Jake & Jimmy Waldeck", @"T. Andrew Binkowski", @"Jonathan", nil];
-    
-    self.roleList = [NSArray arrayWithObjects:@"Lead Development", @"Educational Consultant", @"Talent", @"Professor", @"TA", nil];
-}
+
 
 @end
