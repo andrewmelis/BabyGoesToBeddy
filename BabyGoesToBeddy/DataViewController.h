@@ -13,7 +13,7 @@
 @property (strong, nonatomic) IBOutlet UILabel *pageLabel;
 @property (strong, nonatomic) IBOutlet UIImageView *pagePicture;
 
-@property (strong, nonatomic) id dataObject;
-@property (strong, nonatomic) id dataObject2;
+@property (strong, nonatomic) id dataLabel;
+@property (strong, nonatomic) id dataImage;
 
 @end

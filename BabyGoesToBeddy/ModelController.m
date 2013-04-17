@@ -20,7 +20,7 @@
  */
 
 @interface ModelController()
-@property (readonly, strong, nonatomic) NSArray *pageData;
+@property (readonly, strong, nonatomic) NSArray *pageLabels;
 @property (readonly, strong, nonatomic) NSArray *pageImages;
 
 @end
@@ -36,7 +36,7 @@
 //        _pageData = [[dateFormatter monthSymbols] copy];
 //        
         //my try
-        _pageData = [NSArray arrayWithObjects:
+        _pageLabels = [NSArray arrayWithObjects:
                      @"This is Jack and Baby Jimmy,",               //pg 1
                      @"and here are Kathy and Jake.",               //pg 2
                      @"The family went out to the park",            //pg 3
@@ -69,25 +69,14 @@
     // Return the data view controller for the given index.
     
     //this if is for broken cases
-    if (([self.pageData count] == 0) || (index >= [self.pageData count])) {
+    if (([self.pageLabels count] == 0) || (index >= [self.pageLabels count])) {
         return nil;
     }
     
     // Create a new view controller and pass suitable data.
     DataViewController *dataViewController = [storyboard instantiateViewControllerWithIdentifier:@"DataViewController"];
-    dataViewController.dataObject = self.pageData[index];
-    dataViewController.dataObject2 = self.pageImages[index];
-    
-    //giant if statement for each picture
-//    
-//    if(index==0) {
-////        dataViewController.pagePicture = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"1 kathy + jake stroller.jpg"]];
-//        dataViewController.pagePicture.image = [UIImage imageNamed:@"1 kathy + jake stroller.jpg"];
-//        
-//    }
-    
-    
-    
+    dataViewController.dataLabel = self.pageLabels[index];
+    dataViewController.dataImage = self.pageImages[index];
     
     return dataViewController;
 }
@@ -96,7 +85,7 @@
 {   
      // Return the index of the given data view controller.
      // For simplicity, this implementation uses a static array of model objects and the view controller stores the model object; you can therefore use the model object to identify the index.
-    return [self.pageData indexOfObject:viewController.dataObject];
+    return [self.pageLabels indexOfObject:viewController.dataLabel];
 }
 
 #pragma mark - Page View Controller Data Source
@@ -120,7 +109,7 @@
     }
     
     index++;
-    if (index == [self.pageData count]) {
+    if (index == [self.pageLabels count]) {
         return nil;
     }
     return [self viewControllerAtIndex:index storyboard:viewController.storyboard];

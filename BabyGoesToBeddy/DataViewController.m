@@ -30,13 +30,10 @@
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
-    self.pageLabel.text = [self.dataObject description];
-//    self.pagePicture.image = [UIImage imageNamed:@"1 kathy + jake stroller.jpg"];
-    self.pagePicture.image = _dataObject2;
     
-    //if statement to add correct picture?
-//    if 
-
+    self.pageLabel.text = [self.dataLabel description];
+    self.pagePicture.image = _dataImage;
+    
 }
 
 @end
